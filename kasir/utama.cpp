@@ -1,33 +1,32 @@
 #include <iostream>
+#include "menu.cpp"
+#include "barang.cpp"
 
 using namespace std;
 
-int main(){
+void menumain(){
+    system("cls");
     int pil;
     cout<<"===================================="<<endl;
     cout <<"Selamat Berbelanja di Sembako Rahayu"<<endl;
     cout<<"===================================="<<endl;
-    cout <<"            PILIHAN MENU   "<<endl;
+    cout <<"\n PILIHAN MENU \n"<<endl;
     cout<<"===================================="<<endl;
-    cout <<"1. Login "<<endl;
-    cout <<"2. Kasir "<<endl;
-    cout <<"3. Stok Barang "<<endl;
-    cout <<"4. Exit "<<endl;
+    cout <<"1. Kasir "<<endl;
+    cout <<"2. Stok Barang "<<endl;
+    cout <<"3. Exit "<<endl;
     cout<<"===================================="<<endl;
-    cout <<"Pilih Nomor 1/2/3/4: ";
+    cout <<"Pilih Nomor 1/2/3: ";
     cin>>pil;
     switch (pil)
     {
     case 1:
-        cout<<"Tampilan Login"<<endl;
+        menuKasir();
         break;
     case 2:
-        cout<<"Tampilan Kasir"<<endl;
+        barang();
         break;
     case 3:
-        cout<<"Tampilan Stok Barang"<<endl;
-        break;
-    case 4:
         cout<<"Tampilan Exit"<<endl;
         break;
     
@@ -35,5 +34,4 @@ int main(){
         cout<<"Tidak Diketahui"<<endl;
         break;
     }
-    return 0;
 }

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main(){
+void barang(){
     cout << "1. Beras/kg                10.000"<<endl;
     cout << "2. Telur/kg                24.000"<<endl;
     cout << "3. Air Mineral Cup/dus     20.000"<<endl;
